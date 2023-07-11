@@ -2,10 +2,12 @@ package com.stu;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 class PrimeIn{
 
-    public static void PrimeIn(){
-
+    public static ArrayList<Integer> PrimeIn(){
+        ArrayList<Integer> list= new ArrayList<Integer>();
         for(int i=2; i<=100; i++){
             boolean flag = true;
             for(int j=2; j<i; j++){
@@ -15,14 +17,17 @@ class PrimeIn{
                 }
             }
             if(flag){
-                System.out.println(i);
+                list.add(i);
+
             }
 
     }
+        return list;
     }
     @Test
     public void Test(){
-        PrimeIn();
+        ArrayList<Integer> result = PrimeIn();
+        System.out.println(result);
     }
 
 }
