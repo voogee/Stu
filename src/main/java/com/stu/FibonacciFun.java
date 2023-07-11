@@ -2,22 +2,28 @@ package com.stu;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 //斐波拉契数列0,1,1,2,3,5,8
 public class FibonacciFun {
 
-    public void Fibonacci(int[] arr,int n){
-        int a = arr[0];
-        int b = arr[1];
+    public ArrayList<Integer> Fibonacci(ArrayList<Integer> arr, int n){
+        int a = arr.get(0);
+        int b = arr.get(1);
         for(int i=0; i<n ;i++){
             b= a+b;
             a=b-a;
-            System.out.println(b);
+            arr.add(b);
         }
+        return arr;
     }
     @Test
     public void  Test() {
-        int[] arr = {0, 1};
-        Fibonacci(arr,10);
+        ArrayList<Integer> list= new ArrayList<Integer>();
+        list.add(0);
+        list.add(1);
+        ArrayList<Integer> newlist = Fibonacci(list,10);
+        System.out.println(newlist);
     }
 
 }
