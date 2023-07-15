@@ -4,9 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-//斐波拉契数列0,1,1,2,3,5,8
+//斐波拉契数列0,1,1,2,3,5,8,13
 public class FibonacciFun {
-
     public ArrayList<Integer> Fibonacci(ArrayList<Integer> arr, int n){
         int a = arr.get(0);
         int b = arr.get(1);

@@ -20,7 +20,6 @@ class PrimeIn{
                 list.add(i);
 
             }
-
     }
         return list;
     }

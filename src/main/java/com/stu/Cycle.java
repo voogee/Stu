@@ -3,7 +3,6 @@ package com.stu;
 import org.junit.jupiter.api.Test;
 
 public class Cycle {
-
     public boolean isCycle(Node head) {
         if (head == null) {
             return false;
